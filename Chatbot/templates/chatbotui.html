@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatbot UI</title>
+  <style>
+    body { font-family: Arial; background: #f0f0f0; display: flex; justify-content: center; }
+    .chat-container {
+      width: 400px; background: white; border-radius: 10px; padding: 15px; margin-top: 40px;
+      display: flex; flex-direction: column; height: 500px; overflow-y: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .message { margin: 8px 0; padding: 8px 10px; border-radius: 6px; max-width: 75%; }
+    .user { background: #d0e7ff; align-self: flex-end; }
+    .bot { background: #e5ffd8; align-self: flex-start; }
+    input { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="chat-container" id="chat"></div>
+    <input id="userInput" placeholder="Type a message..." onkeydown="if(event.key==='Enter') sendMessage()">
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById("userInput");
+      const chat = document.getElementById("chat");
+      const text = input.value.trim();
+
+      if (!text) return;
+
+      // Display user message
+      const userMsg = document.createElement("div");
+      userMsg.className = "message user";
+      userMsg.textContent = text;
+      chat.appendChild(userMsg);
+
+      // Send message to Flask backend
+      let response = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: text })
+      });
+
+      let data = await response.json();
+
+      // Display bot reply
+      const botMsg = document.createElement("div");
+      botMsg.className = "message bot";
+      botMsg.textContent = data.reply;
+      chat.appendChild(botMsg);
+
+      // Reset input and scroll
+      input.value = "";
+      chat.scrollTop = chat.scrollHeight;
+    }
+  </script>
+</body>
+</html>
