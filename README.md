@@ -1,103 +1,99 @@
-CODSOFT Internship Projects
+# CODSOFT Internship Projects 🚀
 
-This repository contains all the tasks completed during my CODSOFT Internship program.
-Each project demonstrates core concepts in Python, Machine Learning, Web Development, and AI.
+This repository contains all the tasks completed during my **CODSOFT Internship** program.  
+These projects demonstrate practical knowledge in **Python, Machine Learning, Computer Vision, Web Development, and AI**.
 
-Task 1 – Chatbot
+---
 
-A simple rule-based chatbot built using Python.
+## 📌 Task 1 – Chatbot 🤖
+A simple rule-based chatbot built using Python.  
+It interacts with users using predefined rules and pattern matching.
 
-Features
+### 🔹 Features
+- Rule-based response system  
+- Pattern matching  
+- Basic conversational flow  
 
-Rule-based response
-
-Pattern matching
-
-Basic conversation
-
-Tech Used
-
+### 🛠 Tech Used
 Python
 
-Task 2 – Face Detection App
+---
 
-A real-time face detection tool made using OpenCV.
+## 📌 Task 2 – Face Detection App 👁️
+A real-time face detection application using OpenCV.
 
-Features
+### 🔹 Features
+- Detects faces through webcam  
+- Haarcascade classifier  
+- Frame-by-frame video processing  
 
-Detects faces using webcam
-
-Uses Haarcascade
-
-Processes video frame-by-frame
-
-Tech Used
-
+### 🛠 Tech Used
 Python, OpenCV
 
-Task 3 – Movie Recommendation System
+---
 
-A content-based movie recommender.
+## 📌 Task 3 – Movie Recommendation System 🎬
+A content-based movie recommender system.
 
-Features
+### 🔹 Features
+- Similarity-based recommendations  
+- Movie search functionality  
+- Fast and simple logic  
 
-Similarity-based recommendations
-
-Movie search
-
-Simple and fast
-
-Tech Used
-
+### 🛠 Tech Used
 Python, Pandas, Scikit-learn
 
-Task 4 – TicTacToe Web App
+---
 
+## 📌 Task 4 – TicTacToe Web App 🎮
 A browser-based TicTacToe game.
 
-Features
+### 🔹 Features
+- Player vs Player mode  
+- Interactive UI  
+- Win/Draw detection  
 
-Player vs Player
-
-Interactive UI
-
-Detects wins and draws
-
-Tech Used
-
+### 🛠 Tech Used
 HTML, CSS, JavaScript
 
-Project Structure
+---
 
-CODESOFT →
-• Chatbot
-• face_app
-• recommendation_system
-• tictactoe-web
+## 📁 Project Structure
+CODESOFT/
+├── Chatbot/
+├── face_app/
+├── recommendation_system/
+└── tictactoe-web/
 
-How to Run the Projects
-For Python Projects
 
+---
+
+## 🚀 How to Run the Projects
+
+### 🐍 Python Projects
 Install dependencies and run:
 
 pip install -r requirements.txt
 python app.py
 
-For Web Project
 
-Open the file: index.html
+### 🌐 Web Project
+Open **index.html** in any browser.
 
-Internship Level
+---
 
-Intern — CODSOFT
+## 🎓 Internship Level
+**Intern — CODSOFT**
 
-Contact
+---
 
-Email: kumarsonam.sk@gmail.com
+## 📬 Contact
+📧 Email: kumarsonam.sk@gmail.com  
+💻 GitHub: https://github.com/Sonam010101  
 
-GitHub: https://github.com/Sonam010101
+---
 
-Thank you for reviewing my CODSOFT Internship Submission!
+⭐ Thank you for reviewing my CODSOFT Internship Submission!
 
 
 
